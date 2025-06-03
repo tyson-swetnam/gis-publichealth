@@ -70,9 +70,6 @@ coverage.xml
 # Data directory
 /data/*
 
-# Public data directory
-/public/data/
-
 # Geospatial data files
 *.csv
 *.dbf
