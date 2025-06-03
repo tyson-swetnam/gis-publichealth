@@ -2,11 +2,19 @@
 
 Repository for GIS and public health data analysis and mapping.
 
+## Purpose
+This exercise downloads the snow dataset from the GeoDa Center and unpacks it for GIS and public health analysis.
+
+## Data Source
+Data available from GeoDa Center (https://geodacenter.github.io/data-and-lab/snow/) [1]
+
+[1] GeoDa Center Data & Lab – Snow. https://geodacenter.github.io/data-and-lab/snow/. Accessed June 3, 2025.
+
 ## Setup
 
 1. Clone this repository  
    ```bash
-   git clone https://github.com/<username>/gis-publichealth.git
+   git clone https://github.com/tyson-swetnam/gis-publichealth.git
    ```
 2. Navigate into the project directory  
    ```bash
@@ -24,7 +32,14 @@ Repository for GIS and public health data analysis and mapping.
 
 ## Usage
 
-Add GIS scripts, data, and analysis notebooks under relevant directories.  
+Add GIS scripts, data, and analysis notebooks under relevant directories.
+
+Scrollytelling Map:  
+To view the interactive Broad Street Pump narrative map:
+```bash
+python3 -m http.server 8000
+```
+Then open http://localhost:8000/public/index.html in your browser.
 
 ## Contributing
 

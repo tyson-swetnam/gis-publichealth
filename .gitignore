@@ -66,3 +66,17 @@ coverage.xml
 # Logs and databases
 *.log
 *.sqlite3
+
+# Data directory
+/data/*
+
+# Public data directory
+/public/data/
+
+# Geospatial data files
+*.csv
+*.dbf
+*.geojson
+*.prj
+*.shp
+*.shx

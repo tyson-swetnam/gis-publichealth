@@ -1,0 +1,1 @@
+Point sizes for the first GeoJSON layer have been updated: houses with zero deaths now render at half their original radius (2.5px), houses with one death at 7px, and houses with more than one death at 10px. Reload your local server (http://localhost:8002) to see the changes.
