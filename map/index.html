@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>John Snow Cholera Story Map</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div id="container">
+    <div id="map"></div>
+
+    <div id="story">
+      <section class="step" id="chapter-deaths_nd_by_house">
+        <h2>Deaths & Non-deaths by House</h2>
+        <p>
+          Points represent every house in Soho. Symbol size shows the number of cholera
+          deaths recorded at each address.
+        </p>
+      </section>
+
+      <section class="step" id="chapter-deaths_by_bldg">
+        <h2>Deaths by Building</h2>
+        <p>
+          Buildings with reported cholera deaths in July 1855. Larger circles = more deaths.
+        </p>
+      </section>
+
+      <section class="step" id="chapter-deaths_by_block">
+        <h2>Deaths by Block</h2>
+        <p>
+          Housing blocks coloured by cholera death density (deaths per resident population).
+        </p>
+      </section>
+
+      <section class="step" id="chapter-deaths_by_bsrings">
+        <h2>Broad St. Pump Rings (5 m)</h2>
+        <p>
+          Concentric 5-metre rings around the Broad Street pump, shaded by death density.
+        </p>
+      </section>
+
+      <section class="step" id="chapter-deaths_by_8rings">
+        <h2>All Pump Rings (10 m)</h2>
+        <p>
+          Six rings around each of the eight pumps, coloured by total deaths in each ring.
+        </p>
+      </section>
+
+      <section class="step" id="chapter-pumps">
+        <h2>Pump Locations</h2>
+        <p>
+          The eight water pumps operating in Soho during the 1854 outbreak.
+        </p>
+      </section>
+
+      <section class="step" id="chapter-sewergrates_ventilators">
+        <h2>Sewer Grates & Ventilators</h2>
+        <p>
+          Untrapped sewer grates (green) and ventilator stacks (orange) that dotted the streets.
+        </p>
+      </section>
+
+      <section class="step" id="chapter-subdistricts">
+        <h2>South London Subdistricts</h2>
+        <p>
+          Thirty-two registration subdistricts coloured by 1854 cholera death rate per 10 000
+          residents – the natural experiment contrasting water suppliers.
+        </p>
+      </section>
+    </div>
+  </div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <!-- Main logic -->
+  <script src="main.js"></script>
+</body>
+</html>
